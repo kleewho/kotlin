@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Base64 - pubnub-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pubnub-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">com.pubnub.api.vendor</a>&nbsp;/&nbsp;<a href="./index.html">Base64</a><br/>
+<br/>
+<h1>Base64</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Base64</span></code>
+<p>Utilities for encoding and decoding the Base64 representation of binary data. See RFCs <a href="http://www.ietf.org/rfc/rfc2045.txt">2045</a> and <a href="http://www.ietf.org/rfc/rfc3548.txt">3548</a>.</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-c-r-l-f.html">CRLF</a></h4>
+</td>
+<td>
+<p>Encoder flag bit to indicate lines should be terminated with a CRLF pair instead of just an LF. Has no effect if <code>NO_WRAP</code> is specified as well.</p>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">CRLF</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-d-e-f-a-u-l-t.html">DEFAULT</a></h4>
+</td>
+<td>
+<p>Default values for encoder/decoder flags.</p>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">DEFAULT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-n-o_-c-l-o-s-e.html">NO_CLOSE</a></h4>
+</td>
+<td>
+<p>Flag to pass to indicate that it should not close the output stream it is wrapping when it itself is closed.</p>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">NO_CLOSE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-n-o_-p-a-d-d-i-n-g.html">NO_PADDING</a></h4>
+</td>
+<td>
+<p>Encoder flag bit to omit the padding '=' characters at the end of the output (if any).</p>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">NO_PADDING</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-n-o_-w-r-a-p.html">NO_WRAP</a></h4>
+</td>
+<td>
+<p>Encoder flag bit to omit all line terminators (i.e., the output will be on one long line).</p>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">NO_WRAP</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-u-r-l_-s-a-f-e.html">URL_SAFE</a></h4>
+</td>
+<td>
+<p>Encoder/decoder flag bit to indicate using the "URL and filename safe" variant of Base64 (see RFC 3548 section 4) where <code>-</code> and <code>_</code> are used in place of <code>+</code> and <code>/</code>.</p>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">URL_SAFE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="decode.html">decode</a></h4>
+</td>
+<td>
+<p>Decode the Base64-encoded data in input and return the data in a new byte array. </p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">decode</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.String, kotlin.Int)/str">str</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.String, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">decode</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.ByteArray, kotlin.Int)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.ByteArray, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">decode</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/len">len</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="encode.html">encode</a></h4>
+</td>
+<td>
+<p>Base64-encode the given data and return a newly allocated byte[] with the result.</p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">encode</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Base64$encode(kotlin.ByteArray, kotlin.Int)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$encode(kotlin.ByteArray, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">encode</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Base64$encode(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$encode(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$encode(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/len">len</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$encode(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="encode-to-string.html">encodeToString</a></h4>
+</td>
+<td>
+<p>Base64-encode the given data and return a newly allocated String with the result.</p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">encodeToString</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Base64$encodeToString(kotlin.ByteArray, kotlin.Int)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$encodeToString(kotlin.ByteArray, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">encodeToString</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Base64$encodeToString(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$encodeToString(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$encodeToString(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/len">len</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$encodeToString(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

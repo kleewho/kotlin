@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Base64.decode - pubnub-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pubnub-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">com.pubnub.api.vendor</a>&nbsp;/&nbsp;<a href="index.html">Base64</a>&nbsp;/&nbsp;<a href="./decode.html">decode</a><br/>
+<br/>
+<h1>decode</h1>
+<a name="com.pubnub.api.vendor.Base64$decode(kotlin.String, kotlin.Int)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">decode</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.String, kotlin.Int)/str">str</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.String, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code>
+<p>Decode the Base64-encoded data in input and return the data in a new byte array. </p>
+<p>The padding '=' characters at the end are considered optional, but if any are present, there must be the correct number of them.</p>
+<h3>Parameters</h3>
+<p><a name="str"></a>
+<code>str</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">:</span> the input String to decode, which is converted to bytes using the default charset</p>
+<p><a name="flags"></a>
+<code>flags</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> controls certain features of the decoded output. Pass <code>DEFAULT</code> to decode standard Base64.</p>
+<h3>Exceptions</h3>
+<p><a name="IllegalArgumentException"></a>
+<code>IllegalArgumentException</code> - if the input contains incorrect padding</p>
+<a name="com.pubnub.api.vendor.Base64$decode(kotlin.ByteArray, kotlin.Int)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">decode</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.ByteArray, kotlin.Int)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.ByteArray, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code>
+<p>Decode the Base64-encoded data in input and return the data in a new byte array. </p>
+<p>The padding '=' characters at the end are considered optional, but if any are present, there must be the correct number of them.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">:</span> the input array to decode</p>
+<p><a name="flags"></a>
+<code>flags</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> controls certain features of the decoded output. Pass <code>DEFAULT</code> to decode standard Base64.</p>
+<h3>Exceptions</h3>
+<p><a name="IllegalArgumentException"></a>
+<code>IllegalArgumentException</code> - if the input contains incorrect padding</p>
+<a name="com.pubnub.api.vendor.Base64$decode(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)"></a>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">decode</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/len">len</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Base64$decode(kotlin.ByteArray, kotlin.Int, kotlin.Int, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code>
+<p>Decode the Base64-encoded data in input and return the data in a new byte array. </p>
+<p>The padding '=' characters at the end are considered optional, but if any are present, there must be the correct number of them.</p>
+<h3>Parameters</h3>
+<p><a name="input"></a>
+<code>input</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">:</span> the data to decode</p>
+<p><a name="offset"></a>
+<code>offset</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> the position within the input array at which to start</p>
+<p><a name="len"></a>
+<code>len</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> the number of bytes of input to decode</p>
+<p><a name="flags"></a>
+<code>flags</code> - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">:</span> controls certain features of the decoded output. Pass <code>DEFAULT</code> to decode standard Base64.</p>
+<h3>Exceptions</h3>
+<p><a name="IllegalArgumentException"></a>
+<code>IllegalArgumentException</code> - if the input contains incorrect padding</p>
+</BODY>
+</HTML>

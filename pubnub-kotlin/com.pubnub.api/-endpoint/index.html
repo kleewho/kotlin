@@ -1,0 +1,384 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Endpoint - pubnub-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pubnub-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">com.pubnub.api</a>&nbsp;/&nbsp;<a href="./index.html">Endpoint</a><br/>
+<br/>
+<h1>Endpoint</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Endpoint</span><span class="symbol">&lt;</span><span class="identifier">Input</span><span class="symbol">, </span><span class="identifier">Output</span><span class="symbol">&gt;</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Endpoint</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.Endpoint$<init>(com.pubnub.api.PubNub)/pubnub">pubnub</span><span class="symbol">:</span>&nbsp;<a href="../-pub-nub/index.html"><span class="identifier">PubNub</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="pubnub.html">pubnub</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">pubnub</span><span class="symbol">: </span><a href="../-pub-nub/index.html"><span class="identifier">PubNub</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="query-param.html">queryParam</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">queryParam</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="async.html">async</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">async</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.Endpoint$async(kotlin.Function2((com.pubnub.api.Endpoint.Output, com.pubnub.api.models.consumer.PNStatus, kotlin.Unit)))/callback">callback</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">result</span><span class="symbol">:</span>&nbsp;<span class="identifier">Output</span><span class="symbol">?</span><span class="symbol">,</span>&nbsp;<span class="identifier">status</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api.models.consumer/-p-n-status/index.html"><span class="identifier">PNStatus</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="create-response.html">createResponse</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createResponse</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.Endpoint$createResponse(retrofit2.Response((com.pubnub.api.Endpoint.Input)))/input">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">Response</span><span class="symbol">&lt;</span><span class="identifier">Input</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Output</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="do-work.html">doWork</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">doWork</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.Endpoint$doWork(java.util.HashMap((kotlin.String, )))/queryParams">queryParams</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html"><span class="identifier">HashMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Call</span><span class="symbol">&lt;</span><span class="identifier">Input</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-affected-channel-groups.html">getAffectedChannelGroups</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getAffectedChannelGroups</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-affected-channels.html">getAffectedChannels</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getAffectedChannels</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-auth-required.html">isAuthRequired</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isAuthRequired</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-pub-key-required.html">isPubKeyRequired</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isPubKeyRequired</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-sub-key-required.html">isSubKeyRequired</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isSubKeyRequired</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="operation-type.html">operationType</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">operationType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.enums/-p-n-operation-type/index.html"><span class="identifier">PNOperationType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="silent-cancel.html">silentCancel</a></h4>
+</td>
+<td>
+<p>cancel the operation but do not alert anybody, useful for restarting the heartbeats and subscribe loops.</p>
+<code><span class="keyword">fun </span><span class="identifier">silentCancel</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="sync.html">sync</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">sync</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Output</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="validate-params.html">validateParams</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">validateParams</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.channel_groups/-add-channel-channel-group/index.html">AddChannelChannelGroup</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">AddChannelChannelGroup</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.channel_group/-p-n-channel-groups-add-channel-result/index.html"><span class="identifier">PNChannelGroupsAddChannelResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.push/-add-channels-to-push/index.html">AddChannelsToPush</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">AddChannelsToPush</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.push/-p-n-push-add-channel-result/index.html"><span class="identifier">PNPushAddChannelResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.message_actions/-add-message-action/index.html">AddMessageAction</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">AddMessageAction</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server.objects_api/-entity-envelope/index.html"><span class="identifier">EntityEnvelope</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.consumer.message_actions/-p-n-message-action/index.html"><span class="identifier">PNMessageAction</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.message_actions/-p-n-add-message-action-result/index.html"><span class="identifier">PNAddMessageActionResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.channel_groups/-all-channels-channel-group/index.html">AllChannelsChannelGroup</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">AllChannelsChannelGroup</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server/-envelope/index.html"><span class="identifier">Envelope</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.channel_group/-p-n-channel-groups-all-channels-result/index.html"><span class="identifier">PNChannelGroupsAllChannelsResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.channel_groups/-delete-channel-group/index.html">DeleteChannelGroup</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DeleteChannelGroup</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.channel_group/-p-n-channel-groups-delete-group-result/index.html"><span class="identifier">PNChannelGroupsDeleteGroupResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints/-delete-messages/index.html">DeleteMessages</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DeleteMessages</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.history/-p-n-delete-messages-result/index.html"><span class="identifier">PNDeleteMessagesResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints/-fetch-messages/index.html">FetchMessages</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FetchMessages</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server/-fetch-messages-envelope/index.html"><span class="identifier">FetchMessagesEnvelope</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.history/-p-n-fetch-messages-result/index.html"><span class="identifier">PNFetchMessagesResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.objects.channel/-get-all-channel-metadata/index.html">GetAllChannelMetadata</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GetAllChannelMetadata</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server.objects_api/-entity-array-envelope/index.html"><span class="identifier">EntityArrayEnvelope</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.consumer.objects.channel/-p-n-channel-metadata/index.html"><span class="identifier">PNChannelMetadata</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.objects.channel/-p-n-channel-metadata-array-result/index.html"><span class="identifier">PNChannelMetadataArrayResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.objects.uuid/-get-all-u-u-i-d-metadata/index.html">GetAllUUIDMetadata</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GetAllUUIDMetadata</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server.objects_api/-entity-array-envelope/index.html"><span class="identifier">EntityArrayEnvelope</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.consumer.objects.uuid/-p-n-u-u-i-d-metadata/index.html"><span class="identifier">PNUUIDMetadata</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.objects.uuid/-p-n-u-u-i-d-metadata-array-result/index.html"><span class="identifier">PNUUIDMetadataArrayResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.objects.channel/-get-channel-metadata/index.html">GetChannelMetadata</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GetChannelMetadata</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server.objects_api/-entity-envelope/index.html"><span class="identifier">EntityEnvelope</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.consumer.objects.channel/-p-n-channel-metadata/index.html"><span class="identifier">PNChannelMetadata</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.objects.channel/-p-n-channel-metadata-result/index.html"><span class="identifier">PNChannelMetadataResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.message_actions/-get-message-actions/index.html">GetMessageActions</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GetMessageActions</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server.objects_api/-entity-envelope/index.html"><span class="identifier">EntityEnvelope</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.consumer.message_actions/-p-n-message-action/index.html"><span class="identifier">PNMessageAction</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.message_actions/-p-n-get-message-actions-result/index.html"><span class="identifier">PNGetMessageActionsResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.presence/-get-state/index.html">GetState</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GetState</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server/-envelope/index.html"><span class="identifier">Envelope</span></a><span class="symbol">&lt;</span><span class="identifier">JsonElement</span><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.presence/-p-n-get-state-result/index.html"><span class="identifier">PNGetStateResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.objects.uuid/-get-u-u-i-d-metadata/index.html">GetUUIDMetadata</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GetUUIDMetadata</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server.objects_api/-entity-envelope/index.html"><span class="identifier">EntityEnvelope</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.consumer.objects.uuid/-p-n-u-u-i-d-metadata/index.html"><span class="identifier">PNUUIDMetadata</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.objects.uuid/-p-n-u-u-i-d-metadata-result/index.html"><span class="identifier">PNUUIDMetadataResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.access/-grant/index.html">Grant</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Grant</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server/-envelope/index.html"><span class="identifier">Envelope</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server.access_manager/-access-manager-grant-payload/index.html"><span class="identifier">AccessManagerGrantPayload</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.access_manager/-p-n-access-manager-grant-result/index.html"><span class="identifier">PNAccessManagerGrantResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.presence/-heartbeat/index.html">Heartbeat</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Heartbeat</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.presence/-here-now/index.html">HereNow</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">HereNow</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server/-envelope/index.html"><span class="identifier">Envelope</span></a><span class="symbol">&lt;</span><span class="identifier">JsonElement</span><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.presence/-p-n-here-now-result/index.html"><span class="identifier">PNHereNowResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints/-history/index.html">History</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">History</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><span class="identifier">JsonElement</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.history/-p-n-history-result/index.html"><span class="identifier">PNHistoryResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.presence/-leave/index.html">Leave</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Leave</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.channel_groups/-list-all-channel-group/index.html">ListAllChannelGroup</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ListAllChannelGroup</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server/-envelope/index.html"><span class="identifier">Envelope</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.channel_group/-p-n-channel-groups-list-all-result/index.html"><span class="identifier">PNChannelGroupsListAllResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.push/-list-push-provisions/index.html">ListPushProvisions</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ListPushProvisions</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.push/-p-n-push-list-provisions-result/index.html"><span class="identifier">PNPushListProvisionsResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints/-message-counts/index.html">MessageCounts</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">MessageCounts</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><span class="identifier">JsonElement</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.history/-p-n-message-count-result/index.html"><span class="identifier">PNMessageCountResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.pubsub/-publish/index.html">Publish</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Publish</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer/-p-n-publish-result/index.html"><span class="identifier">PNPublishResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.push/-remove-all-push-channels-for-device/index.html">RemoveAllPushChannelsForDevice</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RemoveAllPushChannelsForDevice</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.push/-p-n-push-remove-all-channels-result/index.html"><span class="identifier">PNPushRemoveAllChannelsResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.channel_groups/-remove-channel-channel-group/index.html">RemoveChannelChannelGroup</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RemoveChannelChannelGroup</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.channel_group/-p-n-channel-groups-remove-channel-result/index.html"><span class="identifier">PNChannelGroupsRemoveChannelResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.objects.channel/-remove-channel-metadata/index.html">RemoveChannelMetadata</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RemoveChannelMetadata</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server.objects_api/-entity-envelope/index.html"><span class="identifier">EntityEnvelope</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.objects/-p-n-remove-metadata-result/index.html"><span class="identifier">PNRemoveMetadataResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.push/-remove-channels-from-push/index.html">RemoveChannelsFromPush</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RemoveChannelsFromPush</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.push/-p-n-push-remove-channel-result/index.html"><span class="identifier">PNPushRemoveChannelResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.message_actions/-remove-message-action/index.html">RemoveMessageAction</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RemoveMessageAction</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.message_actions/-p-n-remove-message-action-result/index.html"><span class="identifier">PNRemoveMessageActionResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.objects.uuid/-remove-u-u-i-d-metadata/index.html">RemoveUUIDMetadata</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RemoveUUIDMetadata</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server.objects_api/-entity-envelope/index.html"><span class="identifier">EntityEnvelope</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.objects/-p-n-remove-metadata-result/index.html"><span class="identifier">PNRemoveMetadataResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.objects.channel/-set-channel-metadata/index.html">SetChannelMetadata</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">SetChannelMetadata</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server.objects_api/-entity-envelope/index.html"><span class="identifier">EntityEnvelope</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.consumer.objects.channel/-p-n-channel-metadata/index.html"><span class="identifier">PNChannelMetadata</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.objects.channel/-p-n-channel-metadata-result/index.html"><span class="identifier">PNChannelMetadataResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.presence/-set-state/index.html">SetState</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">SetState</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server/-envelope/index.html"><span class="identifier">Envelope</span></a><span class="symbol">&lt;</span><span class="identifier">JsonElement</span><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.presence/-p-n-set-state-result/index.html"><span class="identifier">PNSetStateResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.objects.uuid/-set-u-u-i-d-metadata/index.html">SetUUIDMetadata</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">SetUUIDMetadata</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server.objects_api/-entity-envelope/index.html"><span class="identifier">EntityEnvelope</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.consumer.objects.uuid/-p-n-u-u-i-d-metadata/index.html"><span class="identifier">PNUUIDMetadata</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.objects.uuid/-p-n-u-u-i-d-metadata-result/index.html"><span class="identifier">PNUUIDMetadataResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.pubsub/-signal/index.html">Signal</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Signal</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer/-p-n-publish-result/index.html"><span class="identifier">PNPublishResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.pubsub/-subscribe/index.html">Subscribe</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Subscribe</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server/-subscribe-envelope/index.html"><span class="identifier">SubscribeEnvelope</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.server/-subscribe-envelope/index.html"><span class="identifier">SubscribeEnvelope</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints/-time/index.html">Time</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Time</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer/-p-n-time-result/index.html"><span class="identifier">PNTimeResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.pubnub.api.endpoints.presence/-where-now/index.html">WhereNow</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">WhereNow</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server/-envelope/index.html"><span class="identifier">Envelope</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server.presence/-where-now-payload/index.html"><span class="identifier">WhereNowPayload</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.presence/-p-n-where-now-result/index.html"><span class="identifier">PNWhereNowResult</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

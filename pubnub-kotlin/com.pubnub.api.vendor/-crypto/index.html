@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Crypto - pubnub-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pubnub-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">com.pubnub.api.vendor</a>&nbsp;/&nbsp;<a href="./index.html">Crypto</a><br/>
+<br/>
+<h1>Crypto</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Crypto</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Crypto</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Crypto$<init>(kotlin.String)/cipherKey">cipherKey</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">Crypto</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Crypto$<init>(kotlin.String, kotlin.String)/cipherKey">cipherKey</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Crypto$<init>(kotlin.String, kotlin.String)/customInitializationVector">customInitializationVector</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="decrypt.html">decrypt</a></h4>
+</td>
+<td>
+<p>Decrypt</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">decrypt</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Crypto$decrypt(kotlin.String)/cipher_text">cipher_text</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="encrypt.html">encrypt</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">encrypt</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Crypto$encrypt(kotlin.String)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hex-encode.html">hexEncode</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">hexEncode</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Crypto$hexEncode(kotlin.ByteArray)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hex-string-to-byte-array.html">hexStringToByteArray</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">hexStringToByteArray</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Crypto$hexStringToByteArray(kotlin.String)/s">s</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="init-ciphers.html">initCiphers</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">initCiphers</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="md5.html">md5</a></h4>
+</td>
+<td>
+<p>Get MD5</p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">md5</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Crypto$md5(kotlin.String)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="new-crypto-error.html">newCryptoError</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">newCryptoError</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Crypto$newCryptoError(kotlin.Int, java.lang.Exception)/code">code</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.vendor.Crypto$newCryptoError(kotlin.Int, java.lang.Exception)/exception">exception</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html"><span class="identifier">Exception</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api/-pub-nub-exception/index.html"><span class="identifier">PubNubException</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="sha256.html">sha256</a></h4>
+</td>
+<td>
+<p>Get SHA256</p>
+<code><span class="keyword">open</span> <span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">sha256</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.vendor.Crypto$sha256(kotlin.ByteArray)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

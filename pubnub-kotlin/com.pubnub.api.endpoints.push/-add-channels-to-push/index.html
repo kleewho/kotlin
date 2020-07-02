@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AddChannelsToPush - pubnub-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pubnub-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">com.pubnub.api.endpoints.push</a>&nbsp;/&nbsp;<a href="./index.html">AddChannelsToPush</a><br/>
+<br/>
+<h1>AddChannelsToPush</h1>
+<code><span class="keyword">class </span><span class="identifier">AddChannelsToPush</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api/-endpoint/index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.push/-p-n-push-add-channel-result/index.html"><span class="identifier">PNPushAddChannelResult</span></a><span class="symbol">&gt;</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">AddChannelsToPush</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.endpoints.push.AddChannelsToPush$<init>(com.pubnub.api.PubNub)/pubnub">pubnub</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api/-pub-nub/index.html"><span class="identifier">PubNub</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="channels.html">channels</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">channels</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="device-id.html">deviceId</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">deviceId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="environment.html">environment</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">environment</span><span class="symbol">: </span><a href="../../com.pubnub.api.enums/-p-n-push-environment/index.html"><span class="identifier">PNPushEnvironment</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="push-type.html">pushType</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">pushType</span><span class="symbol">: </span><a href="../../com.pubnub.api.enums/-p-n-push-type/index.html"><span class="identifier">PNPushType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="topic.html">topic</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">topic</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="create-response.html">createResponse</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createResponse</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.endpoints.push.AddChannelsToPush$createResponse(retrofit2.Response((java.lang.Void)))/input">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">Response</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.models.consumer.push/-p-n-push-add-channel-result/index.html"><span class="identifier">PNPushAddChannelResult</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="do-work.html">doWork</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">doWork</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.endpoints.push.AddChannelsToPush$doWork(java.util.HashMap((kotlin.String, )))/queryParams">queryParams</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html"><span class="identifier">HashMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Call</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-affected-channels.html">getAffectedChannels</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAffectedChannels</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="operation-type.html">operationType</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">operationType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">PNAddPushNotificationsOnChannelsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="validate-params.html">validateParams</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">validateParams</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

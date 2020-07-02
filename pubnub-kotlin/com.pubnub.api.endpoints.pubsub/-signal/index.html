@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Signal - pubnub-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pubnub-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">com.pubnub.api.endpoints.pubsub</a>&nbsp;/&nbsp;<a href="./index.html">Signal</a><br/>
+<br/>
+<h1>Signal</h1>
+<code><span class="keyword">class </span><span class="identifier">Signal</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api/-endpoint/index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer/-p-n-publish-result/index.html"><span class="identifier">PNPublishResult</span></a><span class="symbol">&gt;</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Signal</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.endpoints.pubsub.Signal$<init>(com.pubnub.api.PubNub)/pubnub">pubnub</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api/-pub-nub/index.html"><span class="identifier">PubNub</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="channel.html">channel</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">channel</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="message.html">message</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">message</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="create-response.html">createResponse</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createResponse</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.endpoints.pubsub.Signal$createResponse(retrofit2.Response((kotlin.collections.List((kotlin.Any)))))/input">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">Response</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.models.consumer/-p-n-publish-result/index.html"><span class="identifier">PNPublishResult</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="do-work.html">doWork</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">doWork</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.endpoints.pubsub.Signal$doWork(java.util.HashMap((kotlin.String, )))/queryParams">queryParams</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-map/index.html"><span class="identifier">HashMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Call</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-affected-channels.html">getAffectedChannels</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAffectedChannels</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-pub-key-required.html">isPubKeyRequired</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isPubKeyRequired</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="operation-type.html">operationType</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">operationType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">PNSignalOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="validate-params.html">validateParams</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">validateParams</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

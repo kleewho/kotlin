@@ -1,0 +1,363 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PubNub - pubnub-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pubnub-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">com.pubnub.api</a>&nbsp;/&nbsp;<a href="./index.html">PubNub</a><br/>
+<br/>
+<h1>PubNub</h1>
+<code><span class="keyword">class </span><span class="identifier">PubNub</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">PubNub</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.PubNub$<init>(com.pubnub.api.PNConfiguration)/configuration">configuration</span><span class="symbol">:</span>&nbsp;<a href="../-p-n-configuration/index.html"><span class="identifier">PNConfiguration</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="configuration.html">configuration</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">configuration</span><span class="symbol">: </span><a href="../-p-n-configuration/index.html"><span class="identifier">PNConfiguration</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="instance-id.html">instanceId</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">instanceId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="mapper.html">mapper</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">mapper</span><span class="symbol">: </span><a href="../../com.pubnub.api.managers/-mapper-manager/index.html"><span class="identifier">MapperManager</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="version.html">version</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">version</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-channels-to-channel-group.html">addChannelsToChannelGroup</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addChannelsToChannelGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.channel_groups/-add-channel-channel-group/index.html"><span class="identifier">AddChannelChannelGroup</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-listener.html">addListener</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addListener</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.PubNub$addListener(com.pubnub.api.callbacks.SubscribeCallback)/listener">listener</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api.callbacks/-subscribe-callback/index.html"><span class="identifier">SubscribeCallback</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-message-action.html">addMessageAction</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addMessageAction</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.message_actions/-add-message-action/index.html"><span class="identifier">AddMessageAction</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-push-notifications-on-channels.html">addPushNotificationsOnChannels</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addPushNotificationsOnChannels</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.push/-add-channels-to-push/index.html"><span class="identifier">AddChannelsToPush</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="audit-push-channel-provisions.html">auditPushChannelProvisions</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">auditPushChannelProvisions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.push/-list-push-provisions/index.html"><span class="identifier">ListPushProvisions</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="base-url.html">baseUrl</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">baseUrl</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="decrypt.html">decrypt</a></h4>
+</td>
+<td>
+<p>Perform Cryptographic decryption of an input string using cipher key provided by PNConfiguration</p>
+<code><span class="keyword">fun </span><span class="identifier">decrypt</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.PubNub$decrypt(kotlin.String)/inputString">inputString</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Perform Cryptographic decryption of an input string using the cipher key</p>
+<code><span class="keyword">fun </span><span class="identifier">decrypt</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.PubNub$decrypt(kotlin.String, kotlin.String)/inputString">inputString</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.PubNub$decrypt(kotlin.String, kotlin.String)/cipherKey">cipherKey</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="delete-channel-group.html">deleteChannelGroup</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">deleteChannelGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.channel_groups/-delete-channel-group/index.html"><span class="identifier">DeleteChannelGroup</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="delete-messages.html">deleteMessages</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">deleteMessages</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints/-delete-messages/index.html"><span class="identifier">DeleteMessages</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="destroy.html">destroy</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">destroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="disconnect.html">disconnect</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">disconnect</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="encrypt.html">encrypt</a></h4>
+</td>
+<td>
+<p>Perform Cryptographic encryption of an input string and the cipher key provided by PNConfiguration</p>
+<code><span class="keyword">fun </span><span class="identifier">encrypt</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.PubNub$encrypt(kotlin.String)/inputString">inputString</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Perform Cryptographic encryption of an input string and the cipher key.</p>
+<code><span class="keyword">fun </span><span class="identifier">encrypt</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.PubNub$encrypt(kotlin.String, kotlin.String)/inputString">inputString</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.PubNub$encrypt(kotlin.String, kotlin.String)/cipherKey">cipherKey</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="fetch-messages.html">fetchMessages</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fetchMessages</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints/-fetch-messages/index.html"><span class="identifier">FetchMessages</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="fire.html">fire</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fire</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.pubsub/-publish/index.html"><span class="identifier">Publish</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="force-destroy.html">forceDestroy</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">forceDestroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-message-actions.html">getMessageActions</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMessageActions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.message_actions/-get-message-actions/index.html"><span class="identifier">GetMessageActions</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-presence-state.html">getPresenceState</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getPresenceState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.presence/-get-state/index.html"><span class="identifier">GetState</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-subscribed-channel-groups.html">getSubscribedChannelGroups</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSubscribedChannelGroups</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-subscribed-channels.html">getSubscribedChannels</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSubscribedChannels</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="grant.html">grant</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">grant</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.access/-grant/index.html"><span class="identifier">Grant</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="here-now.html">hereNow</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hereNow</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.presence/-here-now/index.html"><span class="identifier">HereNow</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="history.html">history</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">history</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints/-history/index.html"><span class="identifier">History</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="list-all-channel-groups.html">listAllChannelGroups</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">listAllChannelGroups</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.channel_groups/-list-all-channel-group/index.html"><span class="identifier">ListAllChannelGroup</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="list-channels-for-channel-group.html">listChannelsForChannelGroup</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">listChannelsForChannelGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.channel_groups/-all-channels-channel-group/index.html"><span class="identifier">AllChannelsChannelGroup</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="message-counts.html">messageCounts</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">messageCounts</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints/-message-counts/index.html"><span class="identifier">MessageCounts</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="presence.html">presence</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">presence</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.builder/-presence-builder/index.html"><span class="identifier">PresenceBuilder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="publish.html">publish</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">publish</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.pubsub/-publish/index.html"><span class="identifier">Publish</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="reconnect.html">reconnect</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">reconnect</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-all-push-notifications-from-device-with-push-token.html">removeAllPushNotificationsFromDeviceWithPushToken</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeAllPushNotificationsFromDeviceWithPushToken</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.push/-remove-all-push-channels-for-device/index.html"><span class="identifier">RemoveAllPushChannelsForDevice</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-channels-from-channel-group.html">removeChannelsFromChannelGroup</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeChannelsFromChannelGroup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.channel_groups/-remove-channel-channel-group/index.html"><span class="identifier">RemoveChannelChannelGroup</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-listener.html">removeListener</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeListener</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.PubNub$removeListener(com.pubnub.api.callbacks.SubscribeCallback)/listener">listener</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api.callbacks/-subscribe-callback/index.html"><span class="identifier">SubscribeCallback</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-message-action.html">removeMessageAction</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeMessageAction</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.message_actions/-remove-message-action/index.html"><span class="identifier">RemoveMessageAction</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-push-notifications-from-channels.html">removePushNotificationsFromChannels</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removePushNotificationsFromChannels</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.push/-remove-channels-from-push/index.html"><span class="identifier">RemoveChannelsFromPush</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-id.html">requestId</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">requestId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-presence-state.html">setPresenceState</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setPresenceState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.presence/-set-state/index.html"><span class="identifier">SetState</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="signal.html">signal</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">signal</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.pubsub/-signal/index.html"><span class="identifier">Signal</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="subscribe.html">subscribe</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">subscribe</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.builder/-subscribe-builder/index.html"><span class="identifier">SubscribeBuilder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="time.html">time</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">time</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints/-time/index.html"><span class="identifier">Time</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="timestamp.html">timestamp</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">timestamp</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="unsubscribe.html">unsubscribe</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">unsubscribe</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.builder/-unsubscribe-builder/index.html"><span class="identifier">UnsubscribeBuilder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="unsubscribe-all.html">unsubscribeAll</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">unsubscribeAll</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="where-now.html">whereNow</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">whereNow</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.endpoints.presence/-where-now/index.html"><span class="identifier">WhereNow</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

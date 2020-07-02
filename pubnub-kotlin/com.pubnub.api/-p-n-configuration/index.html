@@ -1,0 +1,289 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PNConfiguration - pubnub-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pubnub-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">com.pubnub.api</a>&nbsp;/&nbsp;<a href="./index.html">PNConfiguration</a><br/>
+<br/>
+<h1>PNConfiguration</h1>
+<code><span class="keyword">class </span><span class="identifier">PNConfiguration</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">PNConfiguration</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="auth-key.html">authKey</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">authKey</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cache-busting.html">cacheBusting</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">cacheBusting</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="certificate-pinner.html">certificatePinner</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">certificatePinner</span><span class="symbol">: </span><span class="identifier">CertificatePinner</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cipher-key.html">cipherKey</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">cipherKey</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="connection-spec.html">connectionSpec</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">connectionSpec</span><span class="symbol">: </span><span class="identifier">ConnectionSpec</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="connect-timeout.html">connectTimeout</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">connectTimeout</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dedup-on-subscribe.html">dedupOnSubscribe</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">dedupOnSubscribe</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="filter-expression.html">filterExpression</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">filterExpression</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="google-app-engine-networking.html">googleAppEngineNetworking</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">googleAppEngineNetworking</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="heartbeat-interval.html">heartbeatInterval</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">heartbeatInterval</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="heartbeat-notification-options.html">heartbeatNotificationOptions</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">heartbeatNotificationOptions</span><span class="symbol">: </span><a href="../../com.pubnub.api.enums/-p-n-heartbeat-notification-options/index.html"><span class="identifier">PNHeartbeatNotificationOptions</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hostname-verifier.html">hostnameVerifier</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">hostnameVerifier</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/javax/net/ssl/HostnameVerifier.html"><span class="identifier">HostnameVerifier</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="http-logging-interceptor.html">httpLoggingInterceptor</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">httpLoggingInterceptor</span><span class="symbol">: </span><span class="identifier">HttpLoggingInterceptor</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="include-instance-identifier.html">includeInstanceIdentifier</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">includeInstanceIdentifier</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="include-request-identifier.html">includeRequestIdentifier</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">includeRequestIdentifier</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="log-verbosity.html">logVerbosity</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">logVerbosity</span><span class="symbol">: </span><a href="../../com.pubnub.api.enums/-p-n-log-verbosity/index.html"><span class="identifier">PNLogVerbosity</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="maximum-connections.html">maximumConnections</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">maximumConnections</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="maximum-messages-cache-size.html">maximumMessagesCacheSize</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">maximumMessagesCacheSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="maximum-reconnection-retries.html">maximumReconnectionRetries</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">maximumReconnectionRetries</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="non-subscribe-request-timeout.html">nonSubscribeRequestTimeout</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">nonSubscribeRequestTimeout</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="origin.html">origin</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">origin</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="presence-timeout.html">presenceTimeout</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">presenceTimeout</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="proxy.html">proxy</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">proxy</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/net/Proxy.html"><span class="identifier">Proxy</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="proxy-authenticator.html">proxyAuthenticator</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">proxyAuthenticator</span><span class="symbol">: </span><span class="identifier">Authenticator</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="proxy-selector.html">proxySelector</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">proxySelector</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/net/ProxySelector.html"><span class="identifier">ProxySelector</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="publish-key.html">publishKey</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">publishKey</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="reconnection-policy.html">reconnectionPolicy</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">reconnectionPolicy</span><span class="symbol">: </span><a href="../../com.pubnub.api.enums/-p-n-reconnection-policy/index.html"><span class="identifier">PNReconnectionPolicy</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-message-count-threshold.html">requestMessageCountThreshold</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">requestMessageCountThreshold</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="secret-key.html">secretKey</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">secretKey</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="secure.html">secure</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">secure</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="ssl-socket-factory.html">sslSocketFactory</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">sslSocketFactory</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SSLSocketFactory.html"><span class="identifier">SSLSocketFactory</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-subscriber-thread.html">startSubscriberThread</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">startSubscriberThread</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="subscribe-key.html">subscribeKey</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">subscribeKey</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="subscribe-timeout.html">subscribeTimeout</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">subscribeTimeout</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="suppress-leave-events.html">suppressLeaveEvents</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">suppressLeaveEvents</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="uuid.html">uuid</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">uuid</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="x509-extended-trust-manager.html">x509ExtendedTrustManager</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">x509ExtendedTrustManager</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/javax/net/ssl/X509ExtendedTrustManager.html"><span class="identifier">X509ExtendedTrustManager</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

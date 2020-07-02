@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SetState - pubnub-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pubnub-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">com.pubnub.api.endpoints.presence</a>&nbsp;/&nbsp;<a href="./index.html">SetState</a><br/>
+<br/>
+<h1>SetState</h1>
+<code><span class="keyword">class </span><span class="identifier">SetState</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api/-endpoint/index.html"><span class="identifier">Endpoint</span></a><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server/-envelope/index.html"><span class="identifier">Envelope</span></a><span class="symbol">&lt;</span><span class="identifier">JsonElement</span><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.presence/-p-n-set-state-result/index.html"><span class="identifier">PNSetStateResult</span></a><span class="symbol">&gt;</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">SetState</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.endpoints.presence.SetState$<init>(com.pubnub.api.PubNub)/pubnub">pubnub</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api/-pub-nub/index.html"><span class="identifier">PubNub</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="channel-groups.html">channelGroups</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">channelGroups</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="channels.html">channels</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">channels</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="state.html">state</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">state</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="uuid.html">uuid</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">uuid</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="create-response.html">createResponse</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createResponse</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.endpoints.presence.SetState$createResponse(retrofit2.Response((com.pubnub.api.models.server.Envelope((com.google.gson.JsonElement)))))/input">input</span><span class="symbol">:</span>&nbsp;<span class="identifier">Response</span><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server/-envelope/index.html"><span class="identifier">Envelope</span></a><span class="symbol">&lt;</span><span class="identifier">JsonElement</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.pubnub.api.models.consumer.presence/-p-n-set-state-result/index.html"><span class="identifier">PNSetStateResult</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="do-work.html">doWork</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">doWork</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.endpoints.presence.SetState$doWork(java.util.HashMap((kotlin.String, )))/queryParams">queryParams</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html"><span class="identifier">HashMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Call</span><span class="symbol">&lt;</span><a href="../../com.pubnub.api.models.server/-envelope/index.html"><span class="identifier">Envelope</span></a><span class="symbol">&lt;</span><span class="identifier">JsonElement</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-affected-channel-groups.html">getAffectedChannelGroups</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAffectedChannelGroups</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-affected-channels.html">getAffectedChannels</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAffectedChannels</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="operation-type.html">operationType</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">operationType</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">PNSetStateOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="validate-params.html">validateParams</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">validateParams</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

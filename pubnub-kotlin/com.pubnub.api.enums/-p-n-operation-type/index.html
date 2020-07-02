@@ -1,0 +1,434 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PNOperationType - pubnub-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pubnub-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">com.pubnub.api.enums</a>&nbsp;/&nbsp;<a href="./index.html">PNOperationType</a><br/>
+<br/>
+<h1>PNOperationType</h1>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">PNOperationType</span></code>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-channel-group-operation/index.html">ChannelGroupOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ChannelGroupOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PNOperationType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-history-operation/index.html">HistoryOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">HistoryOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PNOperationType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-message-actions-operation/index.html">MessageActionsOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">MessageActionsOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PNOperationType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-message-counts-operation/index.html">MessageCountsOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">MessageCountsOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PNOperationType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-objects-operation/index.html">ObjectsOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ObjectsOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PNOperationType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-a-m-operation/index.html">PAMOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">PAMOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PNOperationType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-a-m-v3-operation/index.html">PAMV3Operation</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">PAMV3Operation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PNOperationType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-access-manager-audit.html">PNAccessManagerAudit</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNAccessManagerAudit</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PAMOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-access-manager-grant.html">PNAccessManagerGrant</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNAccessManagerGrant</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PAMOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-access-manager-grant-token.html">PNAccessManagerGrantToken</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNAccessManagerGrantToken</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PAMV3Operation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-add-channels-to-group-operation.html">PNAddChannelsToGroupOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNAddChannelsToGroupOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ChannelGroupOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-add-members.html">PNAddMembers</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNAddMembers</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-add-memberships-operation.html">PNAddMembershipsOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNAddMembershipsOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-add-message-action.html">PNAddMessageAction</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNAddMessageAction</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MessageActionsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-add-push-notifications-on-channels-operation.html">PNAddPushNotificationsOnChannelsOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNAddPushNotificationsOnChannelsOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PushNotificationsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-channel-groups-operation.html">PNChannelGroupsOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNChannelGroupsOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ChannelGroupOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-channels-for-group-operation.html">PNChannelsForGroupOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNChannelsForGroupOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ChannelGroupOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-delete-message-action.html">PNDeleteMessageAction</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNDeleteMessageAction</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MessageActionsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-delete-messages-operation.html">PNDeleteMessagesOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNDeleteMessagesOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">HistoryOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-fetch-messages-operation.html">PNFetchMessagesOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNFetchMessagesOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">HistoryOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-get-all-channels-metadata-operation.html">PNGetAllChannelsMetadataOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNGetAllChannelsMetadataOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-get-all-u-u-i-d-metadata-operation.html">PNGetAllUUIDMetadataOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNGetAllUUIDMetadataOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-get-channel-metadata-operation.html">PNGetChannelMetadataOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNGetChannelMetadataOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-get-members.html">PNGetMembers</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNGetMembers</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-get-memberships-operation.html">PNGetMembershipsOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNGetMembershipsOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-get-message-actions.html">PNGetMessageActions</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNGetMessageActions</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MessageActionsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-get-state.html">PNGetState</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNGetState</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PresenceOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-get-u-u-i-d-metadata-operation.html">PNGetUUIDMetadataOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNGetUUIDMetadataOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-heartbeat-operation.html">PNHeartbeatOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNHeartbeatOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PresenceOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-here-now-operation.html">PNHereNowOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNHereNowOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PresenceOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-history-operation.html">PNHistoryOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNHistoryOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">HistoryOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-manage-members.html">PNManageMembers</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNManageMembers</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-manage-memberships.html">PNManageMemberships</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNManageMemberships</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-message-count-operation.html">PNMessageCountOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNMessageCountOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MessageCountsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-publish-operation.html">PNPublishOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNPublishOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PublishOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-push-notification-enabled-channels-operation.html">PNPushNotificationEnabledChannelsOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNPushNotificationEnabledChannelsOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PushNotificationsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-remove-all-push-notifications-operation.html">PNRemoveAllPushNotificationsOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNRemoveAllPushNotificationsOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PushNotificationsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-remove-channel-metadata-operation.html">PNRemoveChannelMetadataOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNRemoveChannelMetadataOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-remove-channels-from-group-operation.html">PNRemoveChannelsFromGroupOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNRemoveChannelsFromGroupOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ChannelGroupOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-remove-group-operation.html">PNRemoveGroupOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNRemoveGroupOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ChannelGroupOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-remove-push-notifications-from-channels-operation.html">PNRemovePushNotificationsFromChannelsOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNRemovePushNotificationsFromChannelsOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PushNotificationsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-remove-u-u-i-d-metadata-operation.html">PNRemoveUUIDMetadataOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNRemoveUUIDMetadataOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-set-channel-metadata-operation.html">PNSetChannelMetadataOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNSetChannelMetadataOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-set-state-operation.html">PNSetStateOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNSetStateOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PresenceOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-set-u-u-i-d-metadata-operation.html">PNSetUUIDMetadataOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNSetUUIDMetadataOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-signal-operation.html">PNSignalOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNSignalOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">SignalsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-subscribe-operation.html">PNSubscribeOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNSubscribeOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PNOperationType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-time-operation.html">PNTimeOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNTimeOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">TimeOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-unsubscribe-operation.html">PNUnsubscribeOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNUnsubscribeOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PresenceOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-update-memberships-operation.html">PNUpdateMembershipsOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNUpdateMembershipsOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ObjectsOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-p-n-where-now-operation.html">PNWhereNowOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">PNWhereNowOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PresenceOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-presence-operation/index.html">PresenceOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">PresenceOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PNOperationType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-publish-operation/index.html">PublishOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">PublishOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PNOperationType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-push-notifications-operation/index.html">PushNotificationsOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">PushNotificationsOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PNOperationType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-signals-operation/index.html">SignalsOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">SignalsOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PNOperationType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-time-operation/index.html">TimeOperation</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">TimeOperation</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">PNOperationType</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="query-param.html">queryParam</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">queryParam</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="to-string.html">toString</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

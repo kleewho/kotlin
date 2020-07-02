@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SubscribeCallback - pubnub-kotlin</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pubnub-kotlin</a>&nbsp;/&nbsp;<a href="../index.html">com.pubnub.api.callbacks</a>&nbsp;/&nbsp;<a href="./index.html">SubscribeCallback</a><br/>
+<br/>
+<h1>SubscribeCallback</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">SubscribeCallback</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">SubscribeCallback</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="message.html">message</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">message</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.callbacks.SubscribeCallback$message(com.pubnub.api.PubNub, com.pubnub.api.models.consumer.pubsub.PNMessageResult)/pubnub">pubnub</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api/-pub-nub/index.html"><span class="identifier">PubNub</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.callbacks.SubscribeCallback$message(com.pubnub.api.PubNub, com.pubnub.api.models.consumer.pubsub.PNMessageResult)/pnMessageResult">pnMessageResult</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.pubsub/-p-n-message-result/index.html"><span class="identifier">PNMessageResult</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="message-action.html">messageAction</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">messageAction</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.callbacks.SubscribeCallback$messageAction(com.pubnub.api.PubNub, com.pubnub.api.models.consumer.pubsub.message_actions.PNMessageActionResult)/pubnub">pubnub</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api/-pub-nub/index.html"><span class="identifier">PubNub</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.callbacks.SubscribeCallback$messageAction(com.pubnub.api.PubNub, com.pubnub.api.models.consumer.pubsub.message_actions.PNMessageActionResult)/pnMessageActionResult">pnMessageActionResult</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.pubsub.message_actions/-p-n-message-action-result/index.html"><span class="identifier">PNMessageActionResult</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="presence.html">presence</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">presence</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.callbacks.SubscribeCallback$presence(com.pubnub.api.PubNub, com.pubnub.api.models.consumer.pubsub.PNPresenceEventResult)/pubnub">pubnub</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api/-pub-nub/index.html"><span class="identifier">PubNub</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.callbacks.SubscribeCallback$presence(com.pubnub.api.PubNub, com.pubnub.api.models.consumer.pubsub.PNPresenceEventResult)/pnPresenceEventResult">pnPresenceEventResult</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.pubsub/-p-n-presence-event-result/index.html"><span class="identifier">PNPresenceEventResult</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="signal.html">signal</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">signal</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.callbacks.SubscribeCallback$signal(com.pubnub.api.PubNub, com.pubnub.api.models.consumer.pubsub.PNSignalResult)/pubnub">pubnub</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api/-pub-nub/index.html"><span class="identifier">PubNub</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.callbacks.SubscribeCallback$signal(com.pubnub.api.PubNub, com.pubnub.api.models.consumer.pubsub.PNSignalResult)/pnSignalResult">pnSignalResult</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api.models.consumer.pubsub/-p-n-signal-result/index.html"><span class="identifier">PNSignalResult</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="status.html">status</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">status</span><span class="symbol">(</span><span class="identifier" id="com.pubnub.api.callbacks.SubscribeCallback$status(com.pubnub.api.PubNub, com.pubnub.api.models.consumer.PNStatus)/pubnub">pubnub</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api/-pub-nub/index.html"><span class="identifier">PubNub</span></a><span class="symbol">, </span><span class="identifier" id="com.pubnub.api.callbacks.SubscribeCallback$status(com.pubnub.api.PubNub, com.pubnub.api.models.consumer.PNStatus)/pnStatus">pnStatus</span><span class="symbol">:</span>&nbsp;<a href="../../com.pubnub.api.models.consumer/-p-n-status/index.html"><span class="identifier">PNStatus</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
